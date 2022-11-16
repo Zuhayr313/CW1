@@ -24,7 +24,7 @@ echo "-----------------------------------------------------"
 else
 echo "Failed, Program exits with exception thrown as no input data was provided"
 echo "-------------------------------------------------------------------------"
-#exit 1
+exit 1
 
 fi
 
@@ -50,7 +50,7 @@ echo "-----------------------------------------------------"
 else
 echo "Failed, Program exits with exception thrown as intput data was entered in the wrong format"
 echo "------------------------------------------------------------------------------------------"
-#exit 1
+exit 1
 
 fi
 
