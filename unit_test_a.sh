@@ -10,7 +10,7 @@ echo "Expected output from program :No input data provided. Please run again wit
 echo "-------------------------------------------------------------------------------------------------------------------------"
 
 #Stores output of program with no input data
-output=$(java CurrencyConverter )
+output=$(java CurrencyConverter 2>&1)
 
 #If statement checking to see if program's actul output matches the expected output 
 if ["$output" = "No input data provided. Please run again with input data in correct format(Amount Currency)"];
@@ -24,7 +24,7 @@ echo "-----------------------------------------------------"
 else
 echo "Failed, Program exits with exception thrown as no input data was provided"
 echo "-------------------------------------------------------------------------"
-#exit 1
+exit 1
 
 fi
 
@@ -36,7 +36,7 @@ echo "Expected output from program :Invaild input data provided. Please run agai
 echo "------------------------------------------------------------------------------------------------------------------------------"
 
 #Stores output of program with input data in wrong format
-output=$(java CurrencyConverter dollars 10)
+output=$(java CurrencyConverter dollars 10 2>&1)
 
 #If statement checking to see if program's actul output matches the expected output 
 if ["$output" = "Invaild input data provided. Please run again with input data in correct format(Amount Currency)"];
@@ -50,26 +50,7 @@ echo "-----------------------------------------------------"
 else
 echo "Failed, Program exits with exception thrown as intput data was entered in the wrong format"
 echo "------------------------------------------------------------------------------------------"
-#exit 1
-
-fi
-
-#Stores output of program with input data in wrong format
-output=$(java CurrencyConverter 10 dollars)
-
-#If statement checking to see if program's actul output matches the expected output 
-if ["$output" == "10.0 Dollars = 7.4 Pounds 10.0 Dollars = 8.8 Euros Thank you for using the converter"];
-
-#Sends message if program's actul output equals expected output
-then
-echo "Passed, Program sends message and exits without error"
-echo "-----------------------------------------------------"
-
-#Sends message if program's actul output does not equal expected output and fails the Jenkins build
-else
-echo "Failed, Program exits with exception thrown as intput data was entered in the wrong format"
-echo "------------------------------------------------------------------------------------------"
-#exit 1
+exit 1
 
 fi
 
