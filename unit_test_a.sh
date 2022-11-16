@@ -6,9 +6,7 @@ echo "Testing with no input data"
 
 output=$(java CurrencyConverter )
 
-status=$?
-
-if [$status -eq 0];
+if ["$output" = "No Input Data Provided"];
 
 then
 echo "Passed, Program exits without error"
