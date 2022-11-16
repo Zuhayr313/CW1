@@ -35,7 +35,7 @@ euroUp=$(java CurrencyConverter 1 EURO 2>&1)
 dollarUp=$(java CurrencyConverter 1 DOLLAR 2>&1)
 
 #If Statement checking uppercase format
-if [ "$poundUp" == "Thank you for using the converter." ] && [ "$euroUp" == "Thank you for using the converter." ] && [ "$dollarUp" == "Thank you for using the converter." ]
+if [ "$poundUp" != "Thank you for using the converter." ] && [ "$euroUp" != "Thank you for using the converter." ] && [ "$dollarUp" != "Thank you for using the converter." ]
 
 then
 echo "Passed, program converts with uppercase format"
