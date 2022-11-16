@@ -6,7 +6,7 @@ echo "---------------------------------"
 echo "Testing with no input data"
 echo "--------------------------"
 
-output=$(java CurrencyConverter )
+output=$(java CurrencyConverter 10 dollars )
 
 if ["$output" = "No Input Data Provided"];
 
