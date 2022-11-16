@@ -3,23 +3,23 @@
 echo "Unit Test A - Invaild Input Tests"
 echo "---------------------------------"
 
-echo "Testing with no input data"
-echo "--------------------------"
+#echo "Testing with no input data"
+#echo "--------------------------"
 
-output=$(java CurrencyConverter 10 dollars )
+#output=$(java CurrencyConverter )
 
-if ["$output" = "No Input Data Provided"];
+#if ["$output" = "No Input Data Provided"];
 
-then
-echo "Passed, Program exits without error"
-echo "-----------------------------------"
+#then
+#echo "Passed, Program exits without error"
+#echo "-----------------------------------"
 
-else
-echo "Failed, Program exits with exception thrown as no input data was provided"
-echo "-------------------------------------------------------------------------"
-exit 1
+#else
+#echo "Failed, Program exits with exception thrown as no input data was provided"
+#echo "-------------------------------------------------------------------------"
+#exit 1
 
-fi
+#fi
 
 echo "Testing with wrong format of input data"
 echo "---------------------------------------"
