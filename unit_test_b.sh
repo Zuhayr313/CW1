@@ -12,7 +12,7 @@ eurolow=$(java CurrencyConverter 1 euro 2>&1)
 dollarlow=$(java CurrencyConverter 1 dollar 2>&1)
 
 #If Statement checking lowercase format
-if [ "$poundlow" == "Thank you for using the converter." ] && [ "$eurolow" == "Thank you for using the converter." ] && [ "$dollarlow" == "Thank you for using the converter." ] 
+if [ "$poundlow" != "Thank you for using the converter." ] && [ "$eurolow" != "Thank you for using the converter." ] && [ "$dollarlow" != "Thank you for using the converter." ] 
 
 then
 echo "Passed, program converts with lowercase format"
@@ -57,7 +57,7 @@ euroCap=$(java CurrencyConverter 1 Euro 2>&1)
 dollarCap=$(java CurrencyConverter 1 Dollar 2>&1)
 
 #If Statement checking capitilised format
-if [ "$poundCap" == "Thank you for using the converter." ] && [ "$euroCap" == "Thank you for using the converter." ] && [ "$dollarCap" == "Thank you for using the converter." ]
+if [ "$poundCap" != "Thank you for using the converter." ] && [ "$euroCap" != "Thank you for using the converter." ] && [ "$dollarCap" != "Thank you for using the converter." ]
 
 then
 echo "Passed, program converts with capitilised format"
