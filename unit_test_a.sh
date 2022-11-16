@@ -63,10 +63,10 @@ echo "Expected output from program :10.0 Dollars = 7.4 Pounds
 Thank you for using the converter."
 echo "-------------------------------------------------------"
 
-echo $output
-
 #Stores output of program with correct input data
 output=$(java CurrencyConverter 10 dollars)
+
+echo $output
 
 #If statement checking to see if program's actul output matches the expected output 
 if ["$output" = "10.0 Dollars = 7.4 Pounds 10.0 Dollars = 8.8 Euros Thank you for using the converter."];
