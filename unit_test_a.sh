@@ -69,7 +69,7 @@ substr1="10.0 Dollars = 7.4 Pounds"
 substr2="10.0 Dollars = 8.8 Euros"
 
 #If statement checking to see if program's actul output matches the expected output 
-if [[$output == *"$substr1"* ]];
+if [["$output" == *"$substr1"* ]];
 
 #Sends message if program's actul output equals expected output
 then
