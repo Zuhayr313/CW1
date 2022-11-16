@@ -4,7 +4,7 @@ echo "Unit Test A - Invaild Input Tests"
 
 echo "Testing with no input data"
 
-output=$(java CurrencyConverter " ")
+output=$(java CurrencyConverter )
 
 if ["$output" = "No Input Data Provided"];
 
