@@ -12,6 +12,7 @@ public class CurrencyConverter {
                 amount = Integer.parseInt(args[0]);
                 String currency = args[1].toLowerCase();
                 System.out.println(currency);
+                System.out.println(args.length);
                 
                 if (args.length == 0){
                          System.out.println("No input data provided. Please run again with input data in correct format(Amount Currency)");
@@ -26,7 +27,7 @@ public class CurrencyConverter {
                                              case "dollars" :
                                              // For Dollar Conversion
                                               pound = amount * 0.74;
-                                             System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
+                                              System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
                                               euro = amount * 0.88;
                                               System.out.println(amount + " Dollars = " + f.format(euro) + " Euros");
                                               break;
