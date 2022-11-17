@@ -44,7 +44,7 @@ echo "----------------------------------------------"
 else
 echo "Failed, program does not convert with uppercase format and exits with error"
 echo "---------------------------------------------------------------------------"
-#exit 1
+exit 1
 
 fi
 
@@ -66,7 +66,7 @@ echo "------------------------------------------------"
 else
 echo "Failed, program does not convert with capitilised format and exits with error"
 echo "-----------------------------------------------------------------------------"
-#exit 1
+exit 1
 
 fi
 
