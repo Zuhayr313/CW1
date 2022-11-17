@@ -16,11 +16,9 @@ public class CurrencyConverter {
                         String currency = args[1].toLowerCase();
                         System.out.println(currency);  
                         
-                        if (args[1].toLowerCase() != "dollars" ){
+                        if (args[1].toLowerCase().equals("dollars") ){
                             //|| currency != "pounds" || currency != "euros"){
-                        System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
-                              
-                        } else {
+                        
                                              amount = Integer.parseInt(args[0]);
                                              // For amounts Conversion
                                              switch (currency){
@@ -49,6 +47,8 @@ public class CurrencyConverter {
                                              // System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
                                              // break;} 
                                               System.out.println("Thank you for using the converter.");
+                        } else {
+                                             System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
                         }                         
                 }
          }
