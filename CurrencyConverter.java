@@ -7,18 +7,20 @@ public class CurrencyConverter {
                      
                 double amount, dollar, pound, code, euro;
                 DecimalFormat f = new DecimalFormat("##.##");
-                               //amount = Integer.parseInt(args[0]);
+              //amount = Integer.parseInt(args[0]);
                 String currency = args[1].toLowerCase();
                 System.out.println(currency);
                 
-                if (args.length == 0 || args[1].toLowerCase() == "dollars" || args[1].toLowerCase() == "pounds" || args[1].toLowerCase() == "euros"){
+                if (args.length == 0){
                          System.out.println("No input data provided. Please run again with input data in correct format(Amount Currency)");
                         
                         } else { 
                                            
-                       // if (currency == "dollars" || currency == "pounds" || currency == "euros"){
-                        
-                                amount = Integer.parseInt(args[0]);
+                        if (currency != "dollars" || currency != "pounds" || currency != "euros"){
+                        System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
+                              
+                        } else {
+                        amount = Integer.parseInt(args[0]);
                                 // For amounts Conversion
                                              switch (currency){
                                              case "dollars" :
@@ -46,9 +48,7 @@ public class CurrencyConverter {
                                              // System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
                                              // break;} 
                                               System.out.println("Thank you for using the converter.");
-                       // } else {
-                       // System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
-                       // }                         
+                        }                         
                 }
          }
 
