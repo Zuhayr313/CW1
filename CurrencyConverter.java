@@ -4,22 +4,14 @@ import java.text.DecimalFormat;
 public class CurrencyConverter {
 
         public static void main(String[] args) {
-
-               // System.out.println(currency);
-               // System.out.println(args.length);
-                
+                     
                 if (args.length == 0){
                          System.out.println("No input data provided. Please run again with input data in correct format(Amount Currency)");
                         
                                      } else { 
-                        
-                                             //args[1].includes("dollars")
-                                             // if (currency == "dollars" || currency == "pounds" || currency == "euros"){
-                                             
+                                                                  
                                              double amount, dollar, pound, code, euro;
-
                                              DecimalFormat f = new DecimalFormat("##.##");
-
                                              amount = Integer.parseInt(args[0]);
                                              String currency = args[1].toLowerCase();
                         
@@ -45,15 +37,14 @@ public class CurrencyConverter {
                                               System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
                                               pound = amount * 0.84;
                                               System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
-                                              break;} 
+                                              break;
+                                              default: 
+                                              System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
+                                              break;
+                                             } 
                                               System.out.println("Thank you for using the converter.");
                         
-                                     
-                                             // } else {
-                                                    //   System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
-                                                    // }
                 }
-               // System.out.println("Thank you for using the converter.");
-        }
+         }
 
 }
