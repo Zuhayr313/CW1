@@ -5,13 +5,6 @@ public class CurrencyConverter {
 
         public static void main(String[] args) {
 
-                double amount, dollar, pound, code, euro;
-
-                DecimalFormat f = new DecimalFormat("##.##");
-
-                System.out.println(args.length);
-                amount = Integer.parseInt(args[0]);
-                String currency = args[1].toLowerCase();
                 System.out.println(currency);
                 System.out.println(args.length);
                 
@@ -21,8 +14,15 @@ public class CurrencyConverter {
                                      } else { 
                         
                                              //args[1].includes("dollars")
-                                            // if (currency == "dollars" || currency == "pounds" || currency == "euros"){
+                                             // if (currency == "dollars" || currency == "pounds" || currency == "euros"){
                                              
+                                             double amount, dollar, pound, code, euro;
+
+                                             DecimalFormat f = new DecimalFormat("##.##");
+
+                                             amount = Integer.parseInt(args[0]);
+                                             String currency = args[1].toLowerCase();
+                        
                                              // For amounts Conversion
                                              switch (currency){
                                              case "dollars" :
