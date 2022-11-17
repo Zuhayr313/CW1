@@ -11,7 +11,7 @@ public class CurrencyConverter {
 
                 amount = Integer.parseInt(args[0]);
                 String currency = args[1].toLowerCase();
-                
+                System.out.println(currency);
                 
                 if (args.length == 0){
                          System.out.println("No input data provided. Please run again with input data in correct format(Amount Currency)");
