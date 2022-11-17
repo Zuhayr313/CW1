@@ -12,7 +12,6 @@ public class CurrencyConverter {
                         
                         double amount, dollar, pound, code, euro;
                         DecimalFormat f = new DecimalFormat("##.##");
-                        //amount = Integer.parseInt(args[0]);
                         String currency = args[1].toLowerCase();
                         System.out.println(currency);  
                         
@@ -42,9 +41,7 @@ public class CurrencyConverter {
                                               pound = amount * 0.84;
                                               System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                                               break;}
-                                              //default: 
-                                             // System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
-                                             // break;} 
+                                              
                                               System.out.println("Thank you for using the converter.");
                         } else {
                                              System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
