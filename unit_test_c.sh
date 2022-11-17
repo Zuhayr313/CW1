@@ -6,7 +6,7 @@ echo "--------------------------------------"
 echo "Testing Dollar Conversion"
 echo "-------------------------"
 
-output=$(java CurrencyConverter 1 dollar)
+output=$(java CurrencyConverter 1 dollars)
 substr1="0.74 Pounds"
 substr2="0.88 Euros"
 
