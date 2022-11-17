@@ -9,6 +9,7 @@ public class CurrencyConverter {
 
                 DecimalFormat f = new DecimalFormat("##.##");
 
+                System.out.println(args.length);
                 amount = Integer.parseInt(args[0]);
                 String currency = args[1].toLowerCase();
                 System.out.println(currency);
