@@ -16,8 +16,7 @@ public class CurrencyConverter {
                         String currency = args[1].toLowerCase();
                         System.out.println(currency);  
                         
-                        if (args[1].toLowerCase().equals("dollars") ){
-                            //|| currency != "pounds" || currency != "euros"){
+                        if (args[1].toLowerCase().equals("dollars") || args[1].toLowerCase().equals("pounds") || args[1].toLowerCase().equals("euros")){
                         
                                              amount = Integer.parseInt(args[0]);
                                              // For amounts Conversion
