@@ -21,8 +21,8 @@ public class CurrencyConverter {
                         System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
                               
                         } else {
-                        amount = Integer.parseInt(args[0]);
-                                // For amounts Conversion
+                                             amount = Integer.parseInt(args[0]);
+                                             // For amounts Conversion
                                              switch (currency){
                                              case "dollars" :
                                              // For Dollar Conversion
