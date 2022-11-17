@@ -5,8 +5,8 @@ public class CurrencyConverter {
 
         public static void main(String[] args) {
 
-                System.out.println(currency);
-                System.out.println(args.length);
+               // System.out.println(currency);
+               // System.out.println(args.length);
                 
                 if (args.length == 0){
                          System.out.println("No input data provided. Please run again with input data in correct format(Amount Currency)");
