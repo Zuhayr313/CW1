@@ -11,7 +11,7 @@ substr1="0.74 Pounds"
 substr2="0.88 Euros"
 
 
-if [[ "$output" == *"$substr1"* ]];
+if [[ $output == *"$substr1"* ]];
 then
     echo "Passed, Dollar converts correctly"
     echo "---------------------------------"
