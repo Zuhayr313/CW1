@@ -10,10 +10,10 @@ echo "Expected output from program :No input data provided. Please run again wit
 echo "-------------------------------------------------------------------------------------------------------------------------"
 
 #Stores output of program with no input data
-output=$(java CurrencyConverter 2>&1)
+output1=$(java CurrencyConverter 2>&1)
 
 #If statement checking to see if program's actul output matches the expected output 
-if ["$output" = "No input data provided. Please run again with input data in correct format(Amount Currency)"];
+if ["$output1" = "No input data provided. Please run again with input data in correct format(Amount Currency)"];
 
 #Sends message if program's actul output equals expected output
 then
@@ -36,10 +36,10 @@ echo "Expected output from program :Invaild input data provided. Please run agai
 echo "------------------------------------------------------------------------------------------------------------------------------"
 
 #Stores output of program with input data in wrong format
-output=$(java CurrencyConverter dollars 10 2>&1)
+output2=$(java CurrencyConverter dollars 10 2>&1)
 
 #If statement checking to see if program's actul output matches the expected output 
-if ["$output" = "Invaild input data provided. Please run again with input data in correct format(Amount Currency)"];
+if ["$output2" = "Invaild input data provided. Please run again with input data in correct format(Amount Currency)"];
 
 #Sends message if program's actul output equals expected output
 then
