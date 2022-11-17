@@ -8,14 +8,15 @@ public class CurrencyConverter {
                 if (args.length == 0){
                          System.out.println("No input data provided. Please run again with input data in correct format(Amount Currency)");
                         
-                                     } else { 
-                                                                  
-                                             double amount, dollar, pound, code, euro;
-                                             DecimalFormat f = new DecimalFormat("##.##");
-                                             amount = Integer.parseInt(args[0]);
-                                             String currency = args[1].toLowerCase();
+                        } else { 
+                               double amount, dollar, pound, code, euro;
+                               DecimalFormat f = new DecimalFormat("##.##");
+                               amount = Integer.parseInt(args[0]);
+                               String currency = args[1].toLowerCase();     
+                                             
+                        if (currency == "dollars" || currency == "pounds" || currency == "euros"){
                         
-                                             // For amounts Conversion
+                                // For amounts Conversion
                                              switch (currency){
                                              case "dollars" :
                                              // For Dollar Conversion
@@ -38,12 +39,13 @@ public class CurrencyConverter {
                                               pound = amount * 0.84;
                                               System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                                               break;
-                                              default: 
-                                              System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
-                                              break;
-                                             } 
+                                              //default: 
+                                             // System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
+                                             // break;} 
                                               System.out.println("Thank you for using the converter.");
-                        
+                        } else {
+                        System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
+                        }                         
                 }
          }
 
