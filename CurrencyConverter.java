@@ -48,7 +48,7 @@ public class CurrencyConverter {
                                   } else {
                                         System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
                                          }
-               
+                }
                 System.out.println("Thank you for using the converter.");
         }
 
