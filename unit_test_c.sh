@@ -19,7 +19,7 @@ then
 else
     echo "Failed, Dollar does not correctly convert"
     echo "-----------------------------------------"
-    #exit 1
+    exit 1
 fi
 
 echo "Testing Pound Conversion"
@@ -38,7 +38,7 @@ then
 else
     echo "Failed, Pound does not correctly convert"
     echo "----------------------------------------"
-    #exit 1
+    exit 1
 fi
 
 echo "Testing Euro Conversion"
@@ -57,9 +57,8 @@ then
 else
     echo "Failed, Euro does not correctly convert"
     echo "-----------------------------------------"
-    #exit 1
+    exit 1
 fi
-
 
 echo "Conversion Rates Testing Completed Sucessfully"
 echo "----------------------------------------------"
