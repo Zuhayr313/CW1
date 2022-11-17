@@ -6,9 +6,6 @@ echo "---------------------------------"
 echo "Testing with no input data"
 echo "--------------------------"
 
-echo "Expected output from program :No input data provided. Please run again with input data in correct format(Amount Currency)"
-echo "-------------------------------------------------------------------------------------------------------------------------"
-
 #Stores output of program with no input data
 output1=$(java CurrencyConverter 2>&1)
 
@@ -31,9 +28,6 @@ fi
 
 echo "Testing with wrong format of input data"
 echo "---------------------------------------"
-
-echo "Expected output from program :Invaild input data provided. Please run again with input data in correct format(Amount Currency)"
-echo "------------------------------------------------------------------------------------------------------------------------------"
 
 #Stores output of program with input data in wrong format
 output2=$(java CurrencyConverter dollars 10 2>&1)
