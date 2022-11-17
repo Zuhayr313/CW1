@@ -8,10 +8,10 @@ echo "--------------------------"
 
 #Stores the variables for no intput data
 output1=$(java CurrencyConverter 2>&1)
-
+aOutput="No input data provided. Please run again with input data in correct format(Amount Currency)"
 
 #If statement checking to see if program's actul output matches the expected output 
-if ["$output1" == "No input data provided. Please run again with input data in correct format(Amount Currency)"];
+if ["$output1" == "$aOutput"];
 
 #Sends message if program's actul output equals expected output
 then
