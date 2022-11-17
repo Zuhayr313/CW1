@@ -11,11 +11,12 @@ public class CurrencyConverter {
                         } else { 
                                double amount, dollar, pound, code, euro;
                                DecimalFormat f = new DecimalFormat("##.##");
-                               amount = Integer.parseInt(args[0]);
+                               //amount = Integer.parseInt(args[0]);
                                String currency = args[1].toLowerCase();     
                                              
                         if (currency == "dollars" || currency == "pounds" || currency == "euros"){
                         
+                                amount = Integer.parseInt(args[0]);
                                 // For amounts Conversion
                                              switch (currency){
                                              case "dollars" :
