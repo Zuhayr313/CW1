@@ -14,8 +14,9 @@ public class CurrencyConverter {
                               
                 if (args.length == 0){
                   System.out.println("No input data provided. Please run again with input data in correct format(Amount Currency)");
+                        //args[1].includes("dollars")
                         
-                } else if (args[1].includes("dollars") || args[1].includes("pounds") || args[1].includes("euros")){
+                } else if (currency == "dollars" || currency == "pounds" || currency == "euros"){
                 // For amounts Conversion
                 switch (currency){
                         case "dollars" :
