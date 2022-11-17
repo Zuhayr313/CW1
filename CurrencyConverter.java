@@ -39,8 +39,8 @@ public class CurrencyConverter {
                                 pound = amount * 0.84;
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                                 break;
-               
-                } else {
+                               } 
+                }else {
                   System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
                 }
                 System.out.println("Thank you for using the converter.");
