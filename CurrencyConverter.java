@@ -10,12 +10,12 @@ public class CurrencyConverter {
                                //amount = Integer.parseInt(args[0]);
                 String currency = args[1].toLowerCase();
                 
-                if (args.length == 0){
+                if (args.length == 0 || currency == "dollars" || currency == "pounds" || currency == "euros"){
                          System.out.println("No input data provided. Please run again with input data in correct format(Amount Currency)");
                         
                         } else { 
                                            
-                        if (currency == "dollars" || currency == "pounds" || currency == "euros"){
+                       // if (currency == "dollars" || currency == "pounds" || currency == "euros"){
                         
                                 amount = Integer.parseInt(args[0]);
                                 // For amounts Conversion
@@ -45,9 +45,9 @@ public class CurrencyConverter {
                                              // System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
                                              // break;} 
                                               System.out.println("Thank you for using the converter.");
-                        } else {
-                        System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
-                        }                         
+                       // } else {
+                       // System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
+                       // }                         
                 }
          }
 
