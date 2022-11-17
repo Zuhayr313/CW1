@@ -19,7 +19,7 @@ public class CurrencyConverter {
                                      } else { 
                         
                                              //args[1].includes("dollars")
-                                             if (currency == "dollars" || currency == "pounds" || currency == "euros"){
+                                            // if (currency == "dollars" || currency == "pounds" || currency == "euros"){
                                              
                                              // For amounts Conversion
                                              switch (currency){
@@ -45,9 +45,9 @@ public class CurrencyConverter {
                                               System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                                               break;} 
                                      
-                                              } else {
-                                                       System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
-                                                     }
+                                             // } else {
+                                                    //   System.out.println("Invaild input data provided. Please run again with input data in correct format(Amount Currency)");
+                                                    // }
                 }
                 System.out.println("Thank you for using the converter.");
         }
